@@ -9,18 +9,18 @@
     width: 1.25rem;
     height: 1.25rem;
 }
-a:link, a:visited  {
+a.pager:link, a.pager:visited  {
     color: #23395B;
     text-decoration: none;
     border-radius: 4px;
 }
 
-a:hover {
+a.pager:hover {
     color: white;
     background-color: #23395B; 
 }
 
-a:active {
+a.pager:active {
     color: white;
     background-color: #58a4b0;
 }

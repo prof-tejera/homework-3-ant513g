@@ -2,25 +2,17 @@ import { Component } from 'react';
 import './RadioButtons.css';
 import Panel from 'components/Panel/Panel';
 import Button from 'components/Button/Button';
+import Input from 'components/Input/Input';
+import 'components/Input/Input.css';
 
 class RadioButtons extends Component {
   render() {
-    const { className, type, value, name } = this.props;
-    const list = ['Apple', 'Pear', 'Orange'];
-    return (
+    const { className, type, value, name, handleClick} = this.props;
+  return (
       <Panel backgroundColor="blue">
-        <form>
-          <div className="radio-panel">
-            <input type="radio" value="Apple" name="fruit" checked></input>
-            <label for="Apple">Apple</label>
-
-            <input type="radio" value="Pear" name="fruit"></input>
-            <label for="Pear">Pear</label>
-
-            <input type="radio" value="Orange" name="fruit"></input>
-            <label for="Orange">Orange</label>
-          </div>
-        </form>
+        <Input type="radio" name="fruit" value="Apple"  labelName="Apple" onChange={handleClick} className="radio-input" checked />
+        <Input type="radio" name="fruit" value="Pear" labelName="Pear" onChange={handleClick} className="radio-input" />
+        <Input type="radio" name="fruit" value="Orange" labelName="Orange" onChange={handleClick} className="radio-input" />
       </Panel>
     );
   }

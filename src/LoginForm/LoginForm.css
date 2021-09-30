@@ -1,0 +1,14 @@
+.form {
+  border: 2px solid#23395B;
+  padding: 4rem;
+  box-sizing: border-box;
+}
+.form a:link, a:visited  {
+  color: #58a4b0;
+  text-decoration: underline;
+  border-radius: 4px;
+}
+
+.form a:hover {
+  color: #23395B;
+}
