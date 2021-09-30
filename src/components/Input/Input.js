@@ -1,8 +1,16 @@
 import { Component } from 'react';
+import Button from 'components/Button/Button';
+import Panel from 'components/Panel/Panel';
+
 
 class Input extends Component {
   render() {
-    return <input />;
+    const { placeholder, name } = this.props;
+    return (
+      <Panel backgroundColor="blue">
+        <input placeholder="text"/>;
+      </Panel>
+    )
   }
 }
 
