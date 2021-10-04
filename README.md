@@ -35,7 +35,9 @@ const SomeComponentThatUsesInput = () => {
 
 ## Bonus
 - Pager: If you have hardcoded a pager that works 1 to 10, then how might we modify it to be a bit more generic? What props can I pass in that will make the component more configurable?
+### To make it more generic, creating a while loop to see what the max limit is, instead of creating an array then looping through it. 
 - Radio buttons: If you hardcoded "Apple", "Pear", and "Orange", then how might you modify it to take in an array of button configurations? What information might we need to determine if a button is active? 
+### Creating an Array then maping through it--similarly the way I did the pagination page.
 
 ## How to run the project
 

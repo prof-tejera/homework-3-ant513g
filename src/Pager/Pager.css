@@ -1,0 +1,26 @@
+.page-container {
+    margin: 0.25rem;
+    text-align: center;
+}
+
+.pager {
+    display: inline-block;
+    padding: 0.75rem;
+    width: 1.25rem;
+    height: 1.25rem;
+}
+a.pager:link, a.pager:visited  {
+    color: #23395B;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+a.pager:hover {
+    color: white;
+    background-color: #23395B; 
+}
+
+a.pager:active {
+    color: white;
+    background-color: #58a4b0;
+}
